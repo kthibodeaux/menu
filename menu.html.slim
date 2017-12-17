@@ -67,11 +67,13 @@ html
   head
     title House of Thibodeaux
     link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"
+    css:
+      body { font-size: .8em; }
   body
     .container
       .row
         .col-md-8
-          table.table.table-striped
+          table.table.table-striped.table-sm
             - all_entrees.group_by(&:category).sort_by(&:first).each do |category, entrees|
               tr
                 th= category.upcase
@@ -87,13 +89,13 @@ html
                       | + Sides
           | * Seasonal
         .col-md-4
-          table.table.table-striped
+          table.table.table-striped.table-sm
             tr
               th Sides
             - sides.sort.each do |side|
               tr
                 td= side
-          table.table.table-striped
+          table.table.table-striped.table-sm
             tr
               th Holiday Specials
             - holiday_specials.sort.each do |special|
