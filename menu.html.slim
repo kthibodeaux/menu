@@ -19,27 +19,31 @@ ruby:
   end
 
   all_entrees = [
-    Entree.new('Shrimp Etouffee', category: :seafood, seasonal: true),
-    Entree.new('Chicken and Sausage Gumbo', seasonal: true),
-    Entree.new('Pork and Sausage Gravy', category: :gravy),
-    Entree.new('Beef and Sausage Gravy', category: :gravy),
-    Entree.new('Smoked Chicken', has_sides: true, category: :bbq),
-    Entree.new('BBQ Platter', has_sides: true, category: :bbq),
-    Entree.new('Red Beans and Rice', category: :gravy),
-    Entree.new('Pulled Buffalo Chicken Sandwiches', has_sides: true),
-    Entree.new('Chicken Tikka Masala'),
-    Entree.new('Mongolian Chicken'),
     Entree.new('Hot Dogs', has_sides: true, category: "Quick 'n Easy"),
     Entree.new('Pizza', category: "Quick 'n Easy"),
+    Entree.new('Sandwiches', has_sides: true, category: "Quick 'n Easy"),
+    Entree.new('Burgers', has_sides: true, category: "Quick 'n Easy"),
+
+    Entree.new('Catfish Etouffee', category: :seafood),
+    Entree.new("Fish n' Chips", has_sides: true, category: :seafood),
+    Entree.new('Fried Catfish', has_sides: true, category: :seafood),
+
+    Entree.new('Chicken and Sausage Gumbo', seasonal: true, category: :cajun),
+    Entree.new('Pork and Sausage Gravy', category: :cajun),
+    Entree.new('Red Beans and Rice', category: :cajun),
+    Entree.new('Chicken and Sausage Jumbalaya', category: :cajun),
+
+    Entree.new('Smoked Chicken', has_sides: true, category: :bbq),
+    Entree.new('BBQ Platter', has_sides: true, category: :bbq),
+
+    Entree.new('Chicken Tikka Masala', category: :indian),
+    Entree.new('Butter Chicken', category: :indian),
+
+    Entree.new('Steaks', has_sides: true),
+    Entree.new('Pulled Buffalo Chicken Sandwiches', has_sides: true),
     Entree.new('Chicken, Sausage, and Potato Wraps'),
     Entree.new('Roasted Chicken', has_sides: true),
-    Entree.new('Fried Catfish Nuggets', has_sides: true, category: :seafood),
-    Entree.new('Fried Shrimp', has_sides: true, category: :seafood, seasonal: true),
-    Entree.new('French Bread Sandwich (Turkey w/ Gravy)', has_sides: true, category: "Quick 'n Easy"),
-    Entree.new('BBQ Ribs', has_sides: true, category: :bbq),
     Entree.new('Pressure Cooked Chicken', has_sides: true),
-    Entree.new('Chicken and Sausage with Cream of Mushroom Soup'),
-    Entree.new('Chicken and Sausage Jumbalaya')
   ]
 
   sides = [
@@ -52,6 +56,7 @@ ruby:
     'Rice Dressing',
     'Roasted Potatoes',
     'Salad',
+    'Sweet Potato Fries',
     'Tater Tots',
     'Texas Toast'
   ]
